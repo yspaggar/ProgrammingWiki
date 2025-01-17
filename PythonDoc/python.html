@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Explained</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="python.css">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+        <script src="python.js"></script>
+    </head>
+    <body>
+        <div class="python">
+            <div style="display: flex;"><h2 style="margin: 15px;">Python</h2><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="python-logo.png"></div>
+            <div class="theme-selector">
+                <label for="theme">Theme</label>
+                <select id="theme" onchange="changeTheme(this.value)">
+                    <option value="1" selected>Dark</option>
+                    <option value="2">Light</option>
+                </select>
+            </div>
+            <div class="python-sections">
+                <h3>Introduction</h3>
+                <div class="python-sections-intro">
+                    <p>Python is a high-level, general purpose programming language designed to be beginner friendly and readable.<br>
+                    It's also garbage collected, very practical not only for datascience and vast majority of tasks with computers but also real life situatuions, And python's a very popular programming language, in fact it is the one of the most popular language out there.<br>
+                    It was created for Server-Side applications, machine learning and the best of all which is automation.<br>
+                    It has gained its popularity from <strong>Simplicity</strong> and <strong>readability for humans</strong>. It also supports wide variety of use cases.<br>
+                    The wide variety of use cases comes from Pythons massive library filled with different modules for many cases.<br>
+                    For example, the module 'os' can do system operations like getting information about the system and controlling files and directories inside your computer.</p>
+                </div>
+                <h3>History</h3>
+
+                <div class="python-sections-history">
+                    <p>Python was designed and developed by Guido Van Rossum at Netherlands Centrum Wiskunde & Informitica in december of the year 1989 but first appeared in february of the year 1991 with the version Python 0.9.0 .<br>
+                    It's said that the name 'Python' comes from the comedy show Monty Python's Flying Circus<br>
+                    Python 2.0 was released in october 2000 with new important features list comprehensions, cycle detecting garbage collection, reference counting and the last of all, Unicode support. The update was really important for modern python programs and operations.<br>
+                    In 2008 Python 3.0 was released with changed syntax and new semantics. With the Python 3.0 release it quickly grew very popular in 2010 and eventually became rivals with java and javascript, and since then it has been one of the most popular (also the easiest) programming language.</p>
+                </div>
+
+                <div style="margin-left: 5%; display: flex; padding: 40px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/640px-Guido_van_Rossum_OSCON_2006_cropped.png" style="width: 150px; height: auto;">
+                    <p style="padding: 10px;">A picture of Guido Van Rossum in 2006 for reference</p>
+                </div>
+
+                <h3>Features and philosophy</h3>
+
+                <div class="python-sections-FsAndPhil">
+                    <p>Python's a multi paradigm language. Python fully supports OOP(Object oriented programming) and structured programming. Also many of their features support functional programming, including aspect oriented programming, metaprogramming and metaobjects.<br>
+                    Python uses dynamic typing, a combination of reference counting and a cycle detecting garbage for managing memory. It also uses dynamic name resolution or late binding, which binds methods and variables during program execution.<br>
+                    Pythons design offers support for functionality while programming in the Lisp tradition. It has filter, map and reduce functions; list comprehensions, dictionaries, sets and generator expressions.<br>
+                    To get deeper into the philosophy(or core philosophy), it is summarized in the <a href="https://en.wikipedia.org/wiki/Zen_of_Python" target="_blank">Zen of python</a>.</p>
+                </div>
+                <h3>Programming</h3>
+
+                <div class="python-sections-programming">
+                    <p>Python has an Indentation rule which if you make a statement or a function you have to indent the code inside the statement as a whitespace, otherwise it is going to run as the program starts or inside another statement.<br>
+                    Indentation is necessary for also creating classes which we'll talk about later<br>
+                    Python has 9 datatypes which are:<br> <br>Strings (str in Python)<br>Integers (int in Python)<br>Floats (float in Python)<br>Arrays (list in Python)<br>Sets (set in Python)<br>Maps (dict (which is shorthand for dictionary) in Python)<br>Tuples (tuple in python)<br><br>
+                    Python has 35-36 keywords and statements but the most important of them are: </p>
+                    <ul>
+                        <li><code class="code">if</code> statement to make a conditional statement.</li>
+                        <li><code class="code">elif</code> statement makes another condition, when an if statements expression is not true. You never type it before if statement.</li>
+                        <li><code class="code">else</code> statements runs when an if or elif statements condition is not true.</li>
+                    </ul>
+                    <p>Example of if-elif-else statements:</p>
+                    <div class="code-container">
+                        <p><span class="keyword">if</span> (Condition1):<br> &nbsp;&nbsp;&nbsp;&nbsp;(Expression)<br><span class="keyword">elif</span> Condition2: <br>&nbsp;&nbsp;&nbsp;&nbsp;(Expression)<br><span class="keyword">else</span><br>&nbsp;&nbsp;&nbsp;&nbsp;(Expression)</p>
+                    </div>
+                    <p>Note: you can put multiple elif statements under one if statement</p>
+                    <ul>
+                        <li><code class="code">for</code> loops are for looping (or iterating) over iterable objects like lists and dicts.</li>
+                        <li><code class="code">while</code> loops is repeating an expression while an condition is true</li>
+                    </ul>
+                    <p>Example of a while loop:</p>
+                    <div class="code-container">
+                        <p><span class="keyword">while</span> (Condition):<br>&nbsp;&nbsp;&nbsp;&nbsp;(Expression)</p>
+                    </div>
+                    <p></p>
+                    <li><code class="code">try</code> statements can handle errors with the except keyword while the code is running. There is also the finally keyword that always runs even if an error occurs.</li>
+                    <p>There is a bunch of different errors that can occur, for example ValueError or TypeError. So you can handle them by using the except keyword. Here is an example:</p>
+                    <div class="code-container">
+                        <p><span class="keyword">try:</span><br>&nbsp;&nbsp;&nbsp;&nbsp;(Expression1)<br>
+                            <span class="keyword">except</span> <span class="object">ValueError</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;(Expression2 in case of a ValueError)<br><span class="keyword">finally</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;(Expression3 that always runs no matter what.)
+                        </p>
+                    </div>
+                    <ul>
+                        <li><code class="code">raise</code> keyword can assert an error like ValueError</li>
+                        <li><code class="code">class</code> keyword is used to create classes that might be necessary in some programs. You can define classes using Object-Oriented-Programming.</li>
+                        <li><code class="code">def</code> keyword is used to define functions.</li>
+                        <li><code class="code">return</code> keyword is used in functions to return a value when the function is called.</li>
+                        <li><code class="code">import</code> keyword can use other Python programs classes or functions by typing import and then the Python programs name (if the program is in the same package). You can also import modules from the massive library of python.</li>
+                    </ul>
+        
+                    <p>To learn more Python, you can go to the <a href="https://docs.python.org/3/" target="_blank">Offical Python Document</a>. It includes a tutorial, the whole library and all the built in functions.</p>
+                    <p>To get more of our pages about programming languages, <a href="C:\Users\yakup\OneDrive\Tiedostot\VSCode\WebPages\index.html">click this link</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

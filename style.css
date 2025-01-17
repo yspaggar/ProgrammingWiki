@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+.entry {
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 75px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg);
+    background-repeat: calc(1);
+    background-position-x: 150px;
+    background-size: 205px;
+    background-position-y: 5%;
+    background-color: rgb(24, 24, 24);
+    border: 5px grey solid;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.yellow {
+    color: rgb(199, 199, 0);
+}
+
+.blue {
+    color: rgb(26, 128, 196);
+}
